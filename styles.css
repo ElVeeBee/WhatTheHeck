@@ -1,132 +1,181 @@
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document*/
 
+body	{
+		font-family: sans-serif, Times;
+		background-color: #000000;
+} /*defines background color and font for all pages*/
 
-body {background: url(images/mapb.jpg) no-repeat;
-	background-size: auto;
-	font-family: Comic Sans MS, sans-serif, cursive;
-}
-
-
-#banner img {border: 3px solid #FFFFFF;
-	border-radius: 50%;
-	margin-right: 20px; 
-	height: 220px;
-	width: 220px;
-	margin-left: 30px;
-}
-
+#wrapper {
+		width: 100%;
+		background-color: #000000;
+		padding-top: 20px;
+		padding-bottom: 20px;
+}/*defines wrapper style*/
 
 #banner {
-	height: 150px; 
-	float: right;
-	background-color: #1cb0a1;
-	width: 100%;
-	border-radius: 50px;
-	border: 3px solid #FFFFFF;
-	margin: auto;
-}
+		color:  #e60000;
+		text-align: center;
+		border-bottom: 3px #ccccb3 ridge;
+		margin-right: 50px;
+} /*defines the style and appearance of the heading and navigation area on each page*/
 
-h1 {text-align: center;
-	margin-top: 50px;	
-}
+hr {
+	margin-top: 102px; 
+	border-style: 3px #ccccb3 ridge; 
+	margin-left: 15px;
+} /*horizontal line between the header and columns*/
 
-h2 {text-align: center;
-}
-
-h3 {margin: auto; 
-	margin-top: 200px;
-}
-
-.pmain {color: #000000;
-	font-weight: normal;
-	margin-left: 30px;
-	font-size: 1em;
-	padding-top: 50px;
-	padding-bottom: 100px;
-}
-
-nav {float: right;
-	padding-right: 80px;
-	list-style-type: none;
-}
-
-
-nav ul {list-style-type: none;}
-
-nav a {text-decoration: none;}
-
-nav a:link {color: black;}
-nav a:visited {color: black;}
-nav a:hover {color: #545454}
-
-div a {text-decoration: none;}
-div a:link {color: #000000;}
-div a:visited {color: #000000;}
-div a:hover {color: #ffff00;} 
-
-#wrapper {width: 80%;
-		margin: 0 auto;
-		background-color: #f5f5f0;
-		border-radius: 10%;
-}
-
-.world {height: 325px;
-	width: 330px;
-	float: right;
-	padding: 50px 20px 0 40px;
-	margin-bottom: 20px;
-}
-
-.circle {position: relative; 
-	border-radius: 50%; 
-	margin-left: 5px; 
-	margin-top: 150px; 
-	height: 200px; 
-	width: 200px; 
+h1	{
+	color:  #e60000;
 	text-align: center;
-	float: left;	
-	line-height: 200px; 
-	display: inline-block;
+} /*heading font*/
 
+h2 {
+	color: #e60000; float: left; 
+	padding: 145px 15px 0 20px; 
+} /*subheading font*/
+
+nav	{
+	text-align: center;
+	padding-bottom: 20px;
+	font-size: 1.2em;
+} /*navigation links; text and position*/
+
+nav a:link {color: #e60000;}
+nav a:visited {color: #0000e6;}
+nav a:hover {color: #ccccb3;} 
+nav a {text-decoration: none;}
+/*styles for nav links when clicked or hovered over*/
+
+a:link {color: #e60000;}
+a:visited {color: #e60000;}
+a:hover {color: #0000e6;}
+a {text-decoration: none;}
+
+p {
+	color: #ccccb3;
+	padding-right: 30px;
+	width: 1000px;
+}/*style for paragraphs on each page*/
+
+strong {
+	font-weight: bold;
+	color: #e60000;
+	font-size: 1.0em;
 }
 
-#leftcontainer {float: left;
-	background-color: #FF6915;
-	border: 5px solid #FFFFFF;
-}
+table, td, th {
+	border: 2px #ccccb3 ridge;
+} /*table style, includes header and content, events page*/
 
-#leftmid {float: left;
-	background-color: #D43F3F;
-	border: 5px solid #FFFFFF;
-	margin-left: 160px;
-}
+th, td {
+	padding: 10px;
+}/*table header and content, events page*/
 
-#rghtmid {float: right;
-	background-color: #763A7A;
-	border: 5px solid #FFFFFF;
-	margin-left: 160px;
-	}
+table {
+	margin-top: 30px;
+}/*table, events page*/
 
-#rightcontainer {float: right;
-	background-color: #6A9A1F;
-	border: 5px solid #FFFFFF;
-	
-}
+label {
+	float:left; 
+	margin-left: .8em;
+	color: #ccccb3;
+	width: 8em;
+	display: block;
+}/*contact form field labels, contact page*/
 
-#midcon {position: relative;
-		float: left;
-		background-color: #763A7A;
-		border: 5px solid #FFFFFF;
-}
+input {
+	color: #e60000; 
+	font-style: bold;
+}/*contact form input boxes, exludes comment box, contact page*/
 
+textarea {
+	display: block;
+	width: 18em;
+	color: #e60000;
+}/*input box for form comment area, contact page*/
 
-footer {text-align: center;
-		font-weight: bold;
+figcaption {
+	color: #ccccb3;
+	font-size: .9em;
+} /*font/text on the caption under the video, media page*/
+
+.text {color: #e60000;} /*text color in the table header*/
+.text1 {color: #0000e6;} /*text color in the table columns*/
+
+#leftcontainer {
+		height: 500px; 
+		float: left; 
+		margin-top: 20px;
+		border-right: 3px #ccccb3 ridge;
+		background-color: #000000;
+} /*titles listed on the left of each page*/
+
+#midcontainer {
+		margin-left: 550px;
+		padding-top: 10px;
+		background-color: #000000;
+}/* content on each page*/
+
+#rightcontainer {
+		background-color: #000000;
+		margin-left: 550px;
+		padding-top: 100px;
+}/*another area for content on each page*/
+
+#bribo {
+		float: right;
+		margin: 0 20px 5px; 5px;
+		border: 1px #ccccb3 solid;
+}/*photo on about page*/
+
+.clearleft {
+		clear: left;
+}/*floats paragraph to the right of pic on about page*/
+
+.footer {
+		color: #ccccb3;
+		text-align: center;
 		font-size: .70em;
-		clear: both;
-}
+		margin: 10% 2.5% 0% 2.5%
+  		right: 0;
+  		bottom: 0;
+  		left: 0;
+  		padding: 50px;
+  		background-color: #000000;
+ } /*copright, webmaster info on each page*/
 
-#floatleft {position: relative;
-	float:left;
+@media (max-width: 768px) {
+	h1 {height: 100%;
+		font-size: 1.5em;
+		padding-left: 0.3em;}
+	h2 {display: none;}
+	hr {display: none;}
+ 	nav {padding: 0px;}
+ 	nav a {display: block;
+ 		font-size: 1.0em;
 }
+ 	nav ul {margin: 0px;
+ 		padding: 0px;}
+ 	nav li { display: block;
+ 		margin: 0px;
+ 		padding: 0px;}
+ 	p {text-align: center;
+ 		display: block;
+ 		max-width: 100%
+ }
+ 	div ul {list-style-position: outside;}
+ 	img	{height: auto;
+ 		 display: block;
+}
+ 	textarea {-webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	   	width: 13em;
+}
+ 	#midcontainer {padding: 0; 
+ 		margin: 0;}
+ 	#rightcontainer {width: 100%;}
+ 	#wrapper {width: 100%} 
+}/*@media area contains css styles for mobile phones, tablets, etc.*/
